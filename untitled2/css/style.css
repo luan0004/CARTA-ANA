@@ -1,0 +1,123 @@
+body{
+  margin:0;
+  background:black;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hero{
+  margin-top:50px;
+}
+
+h1{
+  font-size:50px;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  color:#ccc;
+  font-size:20px;
+}
+
+.slideshow{
+  position:relative;
+  width:420px;
+  height:520px;
+  margin:40px auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.slide{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:20px;
+  opacity:0;
+  transition:1s;
+  box-shadow:0 0 30px rgba(255,0,120,0.6);
+}
+
+.slide.active{
+  opacity:1;
+}
+
+.btn{
+  background:#ff4d6d;
+  color:white;
+  border:none;
+  padding:15px 35px;
+  font-size:18px;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  background:#ff1f4b;
+}
+
+/* estrelas */
+
+.stars{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:url("https://www.transparenttextures.com/patterns/stardust.png");
+  z-index:-2;
+}
+
+/* corações */
+
+.hearts{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  pointer-events:none;
+  overflow:hidden;
+}
+
+.heart{
+  position:absolute;
+  color:#ff4d6d;
+  font-size:20px;
+  animation: subir 6s linear infinite;
+}
+
+@keyframes subir{
+  0%{
+    transform: translateY(0) scale(1);
+    opacity:1;
+  }
+  100%{
+    transform: translateY(-100vh) scale(1.5);
+    opacity:0;
+  }
+
+}
+.titulo{
+  text-align:center;
+  margin-top:40px;
+  font-size:40px;
+}
+
+.carta{
+  max-width:750px;
+  margin:40px auto;
+  background:white;
+  color:#222;
+  padding:40px;
+  border-radius:20px;
+  line-height:1.8;
+  font-size:18px;
+  box-shadow:0 0 30px rgba(255,0,120,0.5);
+}
+
