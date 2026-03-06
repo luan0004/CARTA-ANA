@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta para Ana</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="hearts"></div>
+
+<audio id="musica" autoplay loop muted>
+  <source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+
+  <h1>Feliz Dia das Mulheres ❤️</h1>
+
+  <p class="subtitle">
+    Para a mulher mais incrível da minha vida
+  </p>
+
+  <div class="slideshow">
+
+    <img src="img/nos.jpg" class="slide active">
+    <img src="img/nos 2.jpg" class="slide">
+    <img src="img/nos 3.jpg" class="slide">
+    <img src="img/nos 4.jpg" class="slide">
+
+  </div>
+
+  <br>
+
+  <a href="carta.html">
+    <button class="btn">Abrir minha carta 💌</button>
+  </a>
+
+</section>
+
+<script src="js/script.js"></script>
+<script>
+
+  const musica = document.getElementById("musica");
+
+  document.addEventListener("click", function(){
+    musica.play();
+  });
+
+</script>
+
+</body>
+</html>
